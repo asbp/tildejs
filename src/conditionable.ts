@@ -1,16 +1,17 @@
 import u_tof from "./tof";
+import { ReturnableCallback } from "./_types";
 
 const u_conditionable = (() => {
   const when = (
     condition: boolean,
-    callback: Function,
-    fallback?: Function
+    callback: ReturnableCallback,
+    fallback?: ReturnableCallback
   ) => {
     if (u_tof.truthy(condition)) {
       return callback(condition);
     } else {
-      if (fallback instanceof Function) {
-        return fallback(condition);
+      if (u_tof.truthy(fallback)) {
+        return fallback?.(condition);
       }
 
       return undefined;
@@ -19,14 +20,14 @@ const u_conditionable = (() => {
 
   const unless = (
     condition: boolean,
-    callback: Function,
-    fallback?: Function
+    callback: ReturnableCallback,
+    fallback?: ReturnableCallback
   ) => {
     if (u_tof.falsy(condition)) {
       return callback(condition);
     } else {
-      if (fallback instanceof Function) {
-        return fallback(condition);
+      if (u_tof.truthy(fallback)) {
+        return fallback?.(condition);
       }
 
       return undefined;

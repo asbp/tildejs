@@ -1,4 +1,7 @@
-import tof from "./tof";
+import u_color from "./color";
+import u_conditionable from "./conditionable";
+import u_num from "./num";
+import u_tof from "./tof";
 
 const tilde = (function () {
     var pjson = require('./package.json');
@@ -7,7 +10,10 @@ const tilde = (function () {
 
     const funcExports = {
         version,
-        ...tof
+        tof: u_tof,
+        number: u_num,
+        color: u_color,
+        conditionable: u_conditionable
     }
 
     return funcExports;

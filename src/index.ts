@@ -1,6 +1,6 @@
 import tof from "./tof";
 
-const ini = (function () {
+const tilde = (function () {
     var pjson = require('./package.json');
 
     let version = pjson.version;
@@ -13,4 +13,4 @@ const ini = (function () {
     return funcExports;
 })();
 
-export default ini;
+export default tilde;

@@ -40,8 +40,8 @@ let isEven = tilde.when(number % 2 === 0, () => "even", () => "odd"); //even
 ## Conditionable
 Inspired by Laravel, this helps you when e.g. you need one-liner but don't want to use ternary operator.
 
- 1. `when`: Call a callback function (and return something if needed) when the condition is truthy, otherwise call a fallback function (or simply returning `undefined` when no fallback function specified in the argument).
- 2. `unless`: Call a callback function (and return something if needed) when the condition is falsy, otherwise call a fallback function (or simply returning `undefined` when no fallback function specified in the argument).
+ 1. `when`: Call a callback function (and return something if needed) when the condition is truthy, otherwise call a fallback function.
+ 2. `unless`: Call a callback function (and return something if needed) when the condition is falsy, otherwise call a fallback function.
 
 ## Special Thanks
 

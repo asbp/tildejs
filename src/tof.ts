@@ -24,8 +24,10 @@ const u_tof = (() => {
    * @param {ReturnableCallback} condition
    * @returns {boolean}
    */
-  const falsyExcept = (value: any, condition: ReturnableCallback<any, boolean>): boolean =>
-    falsy(value) && !condition(value);
+  const falsyExcept = (
+    value: any,
+    condition: ReturnableCallback<any, boolean>
+  ): boolean => falsy(value) && !condition(value);
 
   /**
    * Check whether the value is truthy except certain values as conditioned in the callback.
@@ -34,8 +36,10 @@ const u_tof = (() => {
    * @param {ReturnableCallback} condition
    * @returns {boolean}
    */
-  const truthyExcept = (value: any, condition: ReturnableCallback<any, boolean>): boolean =>
-    !falsyExcept(value, condition);
+  const truthyExcept = (
+    value: any,
+    condition: ReturnableCallback<any, boolean>
+  ): boolean => !falsyExcept(value, condition);
 
   /**
    * Check whether the value is falsy except an empty string.

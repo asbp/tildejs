@@ -1,3 +1,5 @@
+import { ReturnableCallback } from "./_types";
+
 const u_tof = (() => {
   /**
    * Check whether the value is falsy.
@@ -19,20 +21,20 @@ const u_tof = (() => {
    * Check whether the value is falsy except certain values as conditioned in the callback.
    *
    * @param value
-   * @param {Function} condition
+   * @param {ReturnableCallback} condition
    * @returns {boolean}
    */
-  const falsyExcept = (value: any, condition: Function): boolean =>
+  const falsyExcept = (value: any, condition: ReturnableCallback<any, boolean>): boolean =>
     falsy(value) && !condition(value);
 
   /**
    * Check whether the value is truthy except certain values as conditioned in the callback.
    *
    * @param value
-   * @param {Function} condition
+   * @param {ReturnableCallback} condition
    * @returns {boolean}
    */
-  const truthyExcept = (value: any, condition: Function): boolean =>
+  const truthyExcept = (value: any, condition: ReturnableCallback<any, boolean>): boolean =>
     !falsyExcept(value, condition);
 
   /**

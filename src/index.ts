@@ -5,7 +5,6 @@ import u_tof from "./tof";
 
 const tilde = (function () {
   const funcExports = {
-    version: "0alpha",
     tof: u_tof,
     number: u_num,
     color: u_color,

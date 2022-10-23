@@ -1,5 +1,5 @@
 # TildeJS
-**NOTE**: This library is still at alpha stage, with few functions to offer, few documentations, and no test units yet. *Use at your own risk* when you intend to use this in *your production app*.
+**NOTE**: This library is still at alpha stage, with few functions to offer, few documentations, and no test units yet. *Use at your own risk* when you intend to use this in *your production app*. **Now this library is functional but not production-ready yet**.
 
 The aim of this library is to provide you with a bunch of JS helper functions, including some you might think is hilarious!
 
@@ -42,3 +42,8 @@ Inspired by Laravel, this helps you when e.g. you need one-liner but don't want 
 
  1. `when`: Call a callback function (and return something if needed) when the condition is truthy, otherwise call a fallback function (or simply returning `undefined` when no fallback function specified in the argument).
  2. `unless`: Call a callback function (and return something if needed) when the condition is falsy, otherwise call a fallback function (or simply returning `undefined` when no fallback function specified in the argument).
+
+## Special Thanks
+
+ 1. Advices on how to split the code and bundle them from https://dev.to/0xkoji/create-an-npm-package-template-with-typescript-and-rollup-js-294a .
+ 2. https://stackedit.io/ -- I edit README.md there.

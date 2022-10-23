@@ -1,6 +1,6 @@
 {
   "name": "tildejs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A little library full of common helper functions so you don't have to write one from scratch.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

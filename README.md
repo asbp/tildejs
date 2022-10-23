@@ -34,10 +34,8 @@ let isEven = tilde.when(number % 2 === 0, () => "even", () => "odd"); //even
  2. `falsy`: Checks whether the value is falsy.
  3. `truthyExcept`: Checks whether the value is truthy except if passed the evaluation callback.
  4. `falsyExcept`: Checks whether the value is falsy except if passed the evaluation callback.
- 5. `truthyExceptEmptyStr`: Checks whether the value is truthy except if the value is an empty string.
- 6. `falsyExceptEmptyStr`: Checks whether the value is falsy except if the value is an empty string.
- 7. `truthyExceptZero`: Checks whether the value is truthy except if the value is a number zero.
- 8. `falsyExceptZero`: Checks whether the value is falsy except if the value is a number zero.
+ 5. `falsyExceptEmptyStr`: Checks whether the value is falsy except if the value is an empty string.
+ 6. `falsyExceptZero`: Checks whether the value is falsy except if the value is a number zero.
 
 ## Conditionable
 Inspired by Laravel, this helps you when e.g. you need one-liner but don't want to use ternary operator.

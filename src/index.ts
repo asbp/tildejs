@@ -12,7 +12,7 @@ const tilde = (function () {
     color: u_color,
     conditionable: u_conditionable,
     set: u_set,
-    str: u_str
+    str: u_str,
   };
 
   return funcExports;

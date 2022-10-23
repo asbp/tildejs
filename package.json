@@ -1,7 +1,7 @@
 {
   "name": "tildejs",
   "description": "A little library full of common helper functions so you don't have to write one from scratch",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "browser": "dist/index.js",
